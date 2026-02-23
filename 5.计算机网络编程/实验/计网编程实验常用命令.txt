@@ -1,0 +1,27 @@
+清理端口脚本运行：
+chmod +x cleanup.sh
+./cleanup.sh
+
+创建echo服务器（含有日志）：
+ncat -v -l 9999 -k --exec "/bin/cat"
+
+编译：
+g++ -o echo_client_lab1 echo_client_lab1.cpp -std=c++11
+
+运行：
+./echo_client_lab1
+
+并发脚本测试：
+chmod +x test_concurrent_clients.sh
+./test_concurrent_clients.sh
+
+实验四：
+chmod +x test_time_server_lab4.sh
+./test_time_server_lab4.sh
+
+chmod +x cleanup_8888.sh
+./cleanup_8888.sh
+
+
+g++ -o udp_time_server_lab4 udp_time_server_lab4.cpp -std=c++11
+
